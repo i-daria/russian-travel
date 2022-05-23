@@ -2,6 +2,48 @@
 @import url('../vendor/fonts.css');
 
 .page {
-
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #2a2c2f;
+  font-family: 'Inter', 'Arial', sans-serif;
+  color: #fff;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 48px 56px 48px;
+}
+
+.logo {
+  max-width: 176px;
+  max-height: 52px;
+}
+
+.languages {
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header__languages {
+  margin: 18px 48px 0 48px; /* отступ сверху 46px - 28px (отступ header) = 18px */
+}
+
+.languages__lang {
+ margin-right: 18px;
+ font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.17;
+  color: #fff;
+  text-decoration: none;
+}
+
+.languages__lang_active {
+  text-decoration-line: underline;
+}
+
+.languages__lang:last-child {
+  margin-right: 0;
+}
