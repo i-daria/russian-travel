@@ -16,11 +16,13 @@
       </div>
     </header>
 
-    <main class="content">
-      <h1 class="page__title">Путешествия по России</h1>
-      <p class="page__subtitle">
-        Настоящая страна не в выпусках новостей, а здесь.
-      </p>
+    <main>
+      <div class="page__heading">
+        <h1 class="page__title">Путешествия по России</h1>
+        <p class="page__subtitle">
+          Настоящая страна не в выпусках новостей, а здесь.
+        </p>
+    </div>
       <div class="wrapper">
         <figure class="lead content__lead">
           <img
@@ -84,9 +86,11 @@
 
       <section class="places">
         <div class="place places__place">
-          <h2 class="place__title">Куршская коса</h2>
-          <!-- + псевдоэлемент URL до ссылки -->
-          <a href="http://park-kosa.ru" class="place__url">park-kosa.ru</a>
+          <h2 class="place__title">Куршская коса</h2> 
+          <div class="place__website">
+            <span class="place__url">URL</span>        
+            <a href="http://park-kosa.ru" class="place__link">park-kosa.ru</a>
+          </div>
           <img
             src="./images/place-kosa.jpg"
             alt="Куршская коса"
@@ -111,12 +115,13 @@
         </div>
         <div class="place places__place">
           <h2 class="place__title">Кольский</h2>
-          <!-- + псевдоэлемент URL до ссылки -->
-          <a
+          <div class="place__website">
+            <span class="place__url">URL</span>        
+            <a
             href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy"
-            class="place__url"
-            >National Geographic</a
-          >
+            class="place__link"
+            >National Geographic</a>
+          </div>          
           <img
             src="./images/place-kolsky.jpg "
             alt="Кольский"
@@ -140,13 +145,14 @@
           </div>
         </div>
         <div class="place places__place">
-          <h2 class="place__title">Алтай</h2>
-          <!-- + псевдоэлемент URL до ссылки -->
-          <a
+          <h2 class="place__title">Алтай</h2>   
+          <div class="place__website">
+            <span class="place__url">URL</span>        
+            <a
             href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822"
-            class="place__url"
-            >Facebook</a
-          >
+            class="place__link"
+            >Facebook</a>
+          </div>   
           <img
             src="./images/place-altai.jpg"
             alt="Алтай"
@@ -169,11 +175,12 @@
           </div>
         </div>
         <div class="place places__place">
-          <h2 class="place__title">Зимний Байкал</h2>
-          <!-- + псевдоэлемент URL до ссылки -->
-          <a href="https://vk.com/baikalmile" class="place__url"
-            >https://vk.com/baikalmile</a
-          >
+          <h2 class="place__title">Зимний Байкал</h2>   
+          <div class="place__website">
+            <span class="place__url">URL</span>        
+            <a href="https://vk.com/baikalmile" class="place__link"
+            >https://vk.com/baikalmile</a>
+          </div> 
           <img
             src="./images/place-winter-baikal.jpg"
             alt="Зимний Байкал"
@@ -195,11 +202,12 @@
           </div>
         </div>
         <div class="place places__place">
-          <h2 class="place__title">Карелия</h2>
-          <!-- + псевдоэлемент URL до ссылки -->
-          <a href="http://vodlozero.ru/" class="place__url"
-            >http://vodlozero.ru/</a
-          >
+          <h2 class="place__title">Карелия</h2> 
+          <div class="place__website">
+            <span class="place__url">URL</span>        
+            <a href="http://vodlozero.ru/" class="place__link"
+            >http://vodlozero.ru/</a>
+          </div> 
           <img
             src="./images/place-karelia.jpg"
             alt="Карелия"
