@@ -37,10 +37,6 @@
   align-items: flex-end;
 }
 
-.header__languages {
-  margin: 18px 48px 0 48px; /* отступ сверху 46px - 28px (отступ header) = 18px */
-}
-
 .languages__lang {
   margin-right: 18px;
   font-weight: 400;
@@ -64,8 +60,9 @@
 
 /* главный контент */
 .page__heading {  
-  width: calc(100% - 296px);
-  margin: 0 auto;
+  width: calc(100% - 200px); /* -96px от header */
+  margin: 0 auto;  
+  margin-bottom: 64px;
 }
 
 .page__title {
@@ -82,7 +79,6 @@
 .page__subtitle {  
   max-width: 520px;
   margin: 0 auto;
-  margin-bottom: 64px;
   padding: 0;
   font-weight: 400;
   font-size: 30px;
@@ -102,7 +98,7 @@
 }
 
 .lead__image {
-  max-width: 100%;
+  width: 100%;
   margin-bottom: 8px;
 }
 
@@ -153,7 +149,7 @@
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 284px);
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
   gap: 16px;
   justify-content: space-between;
   width: calc(100% - 96px);
@@ -176,9 +172,10 @@
 
 .place {
   display: grid;
-  grid-template-columns: 460px 484px;
-  row-gap: 48px; 
+  grid-template-columns: 0.96fr 1fr; /* вместо 460px 484px взяла среднее значение отношений колонок для разрешений 768px, 1024px, 1280px */
+  gap: 40px 48px; 
   justify-content: space-between;
+  align-content: end;
 }
 
 .places__place {
@@ -260,6 +257,7 @@
   background: url('../images/cover-trains.jpg') no-repeat 0, 0 rgba(42, 44, 47, 0.3);  
   background-blend-mode: multiply;
   background-size: contain;
+  background-position: center;
 }
 
 .cover:hover {
@@ -349,29 +347,21 @@
   }
 
   .page__heading {  
-    width: calc(100% - 96px);
+    width: calc(100% - 96px);    
+    margin-bottom: 56px;
   }
 
   .wrapper {  
     width: calc(100% - 96px);
   }
 
-  .page__subtitle {
-    margin-bottom: 56px;
-  }
-
   .gallery {    
-    grid-template-columns: repeat(auto-fill, 300px);
     gap: 14px;
   }
 
   .places {  
     width: calc(100% - 96px);
   }
-  
-  .place {
-    grid-template-columns: 440px 456px;
-}
 
   .place__paragraph {
     margin-bottom: 27px;
@@ -414,7 +404,6 @@
   }
 
   .gallery {  
-    grid-template-columns: repeat(auto-fill, 352px);
     gap: 16px;    
     width: calc(100% - 48px);
     margin-bottom: 88px;  
@@ -422,10 +411,6 @@
 
   .places {
     width: calc(100% - 48px);
-  }
-
-  .place {
-    grid-template-columns: 340px 352px;
   }
   
   .places__place {
@@ -455,13 +440,131 @@
   }
 }
 
-/* НЕ сделано еще! */
-
 /* для экранов от 320px до 767px */
 
 @media screen and (max-width:767px) {
+.header{
+  width: calc(100% - 32px);
+  padding: 16px 0 48px 0;
+}
+  .logo {
+    width: 142px;
+  }
+
+  .languages__lang {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
+  .page__heading {
+    width: calc(100% - 32px);
+    margin-bottom: 40px;
+  }
+
+  .page__title {
+    font-size: 40px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+
+  .page__subtitle {
+    font-size: 16px;
+    line-height: 1.25;
+  } 
+
+  .content__lead {
+    margin-bottom: 64px;
+  }
+
+  .lead__caption {
+    margin-left: 16px;
+  }
+
+  .wrapper {
+    margin-bottom: 64px;
+  }
+
+  .intro {
+    width: calc(100% - 32px);
+  }
+
+  .intro__title {
+    font-size: 32px;
+    line-height: 1.09;
+  }
+
   .gallery {    
-    grid-template-columns: repeat(auto-fill, 288px);
+    width: calc(100% - 32px);
     gap: 12px;
+  }
+
+  .content__gallery {
+    margin-bottom: 64px;
+  }
+
+  .places {
+    width: 100%;
+  }
+
+  .places__place {
+    margin-bottom: 50px;
+  }
+
+  .place {
+    grid-template-columns: 100%;
+    row-gap: 32px;
+  }
+
+  .place__title {
+    margin: 0 16px;
+    font-size: 32px;
+    line-height: 1.09;
+  }
+
+  .place__website {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+  }
+  
+  .place__text {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+  }
+
+  .content__cover {
+    margin-bottom: 64px;
+  }
+
+  .cover__title {    
+    width: calc(100% - 70px); /* увеличила margin, чтобы текст красиво переносился 70 вместо 32px */
+    font-size: 32px;
+    line-height: 1.09;
+    margin-bottom: 16px;
+  }
+
+  .cover__subtitle {    
+    width: calc(100% - 32px);
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer__nav {    
+    flex-direction: column;
+    margin-bottom: calc(48px - 32px);
+  }
+
+  .footer__nav-item {
+    display: block;
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .footer__copyright {
+    text-align: left;
   }
 }
