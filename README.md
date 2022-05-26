@@ -8,3 +8,5 @@
 
 ## Используемые технологии:  
 HTML5, CSS3, Flex, Grid Layout, адаптивная верстка, методология БЭМ
+
+### сайт проекта: [russian-travel](https://i-daria.github.io/russian-travel/index.html)
