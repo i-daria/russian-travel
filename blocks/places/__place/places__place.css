@@ -1,0 +1,27 @@
+.places__place {
+  margin-bottom: 80px;
+}
+
+.places__place:last-child {
+  margin-bottom: 92px;
+}
+
+/* для экранов от 768 до 1023px */
+
+@media screen and (max-width:1023px) {
+  .places__place {
+    margin-bottom: 73px;
+  }
+
+  .places__place:last-child {
+    margin-bottom: 90px;
+  }
+}
+
+/* для экранов от 320px до 767px */
+
+@media screen and (max-width:767px) {
+  .places__place {
+    margin-bottom: 50px;
+  }
+}

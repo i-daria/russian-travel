@@ -1,0 +1,28 @@
+.places {
+  width: calc(100% - 296px);
+  margin: 0 auto;
+}
+
+/* для экранов от 1024px до 1279px */
+
+@media screen and (max-width:1279px) {
+  .places {  
+    width: calc(100% - 96px);
+  }
+}
+
+/* для экранов от 768 до 1023px */
+
+@media screen and (max-width:1023px) {
+  .places {
+    width: calc(100% - 48px);
+  }
+}
+
+/* для экранов от 320px до 767px */
+
+@media screen and (max-width:767px) {
+  .places {
+    width: 100%;
+  }
+}

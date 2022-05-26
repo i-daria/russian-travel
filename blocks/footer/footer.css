@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 96px);
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+
+/* для экранов от 768 до 1023px */
+
+@media screen and (max-width:1023px) {
+  .footer {
+    width: calc(100% - 48px);
+  }
+}
+
+/* для экранов от 320px до 767px */
+
+@media screen and (max-width:767px) {
+  .footer {
+    flex-direction: column;
+  }
+}

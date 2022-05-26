@@ -1,0 +1,16 @@
+.place {
+  display: grid;
+  grid-template-columns: 0.96fr 1fr; /* вместо 460px 484px взяла среднее значение отношений колонок для разрешений 768px, 1024px, 1280px */
+  gap: 40px 48px; 
+  justify-content: space-between;
+  align-content: end;
+}
+
+/* для экранов от 320px до 767px */
+
+@media screen and (max-width:767px) {
+  .place {
+    grid-template-columns: 100%;
+    row-gap: 32px;
+  }
+}

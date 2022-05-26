@@ -1,0 +1,17 @@
+.place__paragraph {
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 0;
+}
+
+.place__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+/* для экранов от 1024px до 1279px */
+
+@media screen and (max-width:1279px) {
+  .place__paragraph {
+    margin-bottom: 27px;
+  }
+}

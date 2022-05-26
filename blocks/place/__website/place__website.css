@@ -1,0 +1,25 @@
+.place__website {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: flex-end;
+}
+
+/* для экранов от 768 до 1023px */
+
+@media screen and (max-width:1023px) {
+  .place__paragraph {
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+}
+
+/* для экранов от 320px до 767px */
+
+@media screen and (max-width:767px) {
+  .place__website {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+  }
+}
