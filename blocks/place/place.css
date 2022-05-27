@@ -6,6 +6,14 @@
   align-content: end;
 }
 
+/* для экранов от 768 до 1023px */
+
+@media screen and (max-width:1023px) {
+  .place {
+    gap: 48px 28px; /* для соответствия текста по Pixel-Perfect row-gap должен быть 46px, не по макету */
+  }
+}
+
 /* для экранов от 320px до 767px */
 
 @media screen and (max-width:767px) {
@@ -14,3 +22,4 @@
     row-gap: 32px;
   }
 }
+  

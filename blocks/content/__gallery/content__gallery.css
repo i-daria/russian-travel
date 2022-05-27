@@ -3,6 +3,14 @@
   margin-bottom: 92px;
 }
 
+/* для экранов от 768 до 1023px */
+
+@media screen and (max-width:1023px) {
+  .content__gallery {  
+    margin-bottom: 88px; 
+  }
+}
+
 /* для экранов от 320px до 767px */
 
 @media screen and (max-width:767px) {
@@ -10,3 +18,6 @@
     margin-bottom: 64px;
   }
 }
+
+
+ 
