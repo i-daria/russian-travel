@@ -1,4 +1,4 @@
-.content__lead {
+.lead__image-block {
   margin: 0 auto;
   margin-bottom: 92px;
 }
@@ -6,7 +6,7 @@
 /* для экранов от 768 до 1023px */
 
 @media screen and (max-width:1023px) {
-  .content__lead {
+  .lead__image-block {
     margin-bottom: 88px;
   }
 }
@@ -14,7 +14,7 @@
 /* для экранов от 320px до 767px */
 
 @media screen and (max-width:767px) {
-  .content__lead {
+  .lead__image-block {
     margin-bottom: 64px;
   }
 }

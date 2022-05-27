@@ -24,4 +24,8 @@
   .places__place {
     margin-bottom: 50px;
   }
+
+  .places__place:last-child {
+    margin-bottom: 66px;
+  }
 }

@@ -1,13 +1,12 @@
-.wrapper {
+.lead {
   width: calc(100% - 296px);
   margin: 0 auto;
-  margin-bottom: 92px;
 }
 
 /* для экранов от 1024px до 1279px */
 
 @media screen and (max-width:1279px) {
-  .wrapper {  
+  .lead {
     width: calc(100% - 96px);
   }
 }
@@ -15,16 +14,8 @@
 /* для экранов от 768 до 1023px */
 
 @media screen and (max-width:1023px) {
-  .wrapper {  
+
+  .lead {
     width: 100%;
-    margin-bottom: 88px;
-  }
-}
-
-/* для экранов от 320px до 767px */
-
-@media screen and (max-width:767px) {
-  .wrapper {
-    margin-bottom: 64px;
   }
 }
